@@ -23,7 +23,7 @@ export default function getProjects() {
         projectLinkGithub: "https://github.com/Vishalll069/repogit",
       },
       {
-        id: 2,
+        id: 3,
         projectTitle: "Myntra-Clone",
         image:'Myntra-clone.png',
         projectInfo: "It's a clone of Myntra Fashion app created using HTML , CSS , vanila js , bootstrap",
@@ -32,7 +32,7 @@ export default function getProjects() {
         projectLinkGithub: "https://github.com/Vishalll069/Myntra-Clone",
       },
       {
-        id: 3,
+        id: 4,
         projectTitle: "Movie-Station",
         image:"movieStation.png",
         projectInfo:
