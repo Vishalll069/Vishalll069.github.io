@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.63ba9fcc.css",
+    "main.js": "/My-Portfolio/static/js/main.4dd91fa8.js",
+    "static/media/hotstar.png": "/My-Portfolio/static/media/hotstar.ed84f6a00d968ee33bd6.png",
+    "static/media/Myntra-clone.png": "/My-Portfolio/static/media/Myntra-clone.ece51c0d11dfc3e67791.png",
+    "static/media/movieStation.png": "/My-Portfolio/static/media/movieStation.aade67b217999dd613f8.png",
+    "static/media/Repogit.png": "/My-Portfolio/static/media/Repogit.77a2744726c1261c2083.png",
+    "static/media/personal.png": "/My-Portfolio/static/media/personal.e3eb87c14df4c7ac8297.png",
+    "static/media/Vishal_Durge_Resume.pdf": "/My-Portfolio/static/media/Vishal_Durge_Resume.0347767daade8ee296bc.pdf",
+    "static/media/image.png": "/My-Portfolio/static/media/image.63124443f7305a5ab6bd.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.63ba9fcc.css.map": "/My-Portfolio/static/css/main.63ba9fcc.css.map",
+    "main.4dd91fa8.js.map": "/My-Portfolio/static/js/main.4dd91fa8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63ba9fcc.css",
+    "static/js/main.4dd91fa8.js"
+  ]
+}
