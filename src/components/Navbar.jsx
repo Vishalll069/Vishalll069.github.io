@@ -6,7 +6,7 @@ export default function Navbar({ handleClick, boolean }) {
     <nav id="nav-menu" onClick={handleClick}>
       <div id="logo-nav">
         <h1 className="nav-link home">
-          <a className="sauce name rubber" href="#hero">
+          <a className="sauce name rubber" href="#home">
             VD 
           </a>
         </h1>
