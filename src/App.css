@@ -2,8 +2,10 @@
   --black: rgb(119, 119, 119);
   /* --black: rgb(53, 53, 53); */
   --light-red: rgb(255, 107, 107);
+  /* --light-red: rgb(255, 136, 136); */
   --lighter-red:#f8e2dc;
   /* --brown-red:rgb(43, 41, 41); */
+  /* --brown-red:rgb(37, 26, 26); */
   --brown-red:rgb(37, 26, 26);
   --font-small:20px;
   --font-med:25px;
@@ -34,6 +36,8 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
   background: rgb(48, 33, 33);
+  /* background: #2C2C2C; */
+  /* background: #444444; */
   /* background: rgb(243, 240, 240); */
   background-size:cover;
   font-size: 18px;
@@ -121,7 +125,7 @@ a:hover{
 /* LINKS */
 
 /* Navbar */
-#navbar{
+#nav-menu{
   background: var(--brown-red);
   position: sticky;
   top: 0;
@@ -164,7 +168,7 @@ a:hover{
 ham i{
   font-size: 25px;
 }
-#navbar ul{
+#nav-menu ul{
   font-size: 20px;
   text-align: center;
   transition: all .3s;
@@ -178,14 +182,14 @@ ham i{
 .display-none{
   display: none;
 }
-#navbar li{
+#nav-menu li{
   margin: 30px 10px;
   list-style: none;
   cursor: pointer;
   transition: all .4s;
   padding: 7px;
 }
-#navbar li:hover{
+#nav-menu li:hover{
   color: var(--light-red);
 }
 .first-btn{
@@ -204,10 +208,10 @@ ham i{
   .resume-button.second-btn{
     margin: auto 0;
   }
-  #navbar{
+  #nav-menu{
     display: flex;
   }
-  #navbar li{
+  #nav-menu li{
     margin: 0 10px;
   }
   #logo-nav{
@@ -215,7 +219,7 @@ ham i{
     text-align: left; 
     margin-bottom: 0;
   }
-  #navbar ul{
+  #nav-menu ul{
     display: flex;
     margin-bottom: 0;
   }
@@ -238,7 +242,7 @@ ham i{
 .hero{
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 90vh;
@@ -268,7 +272,7 @@ ham i{
 }
 .intro{
   width: 100%;
-  margin-top: max(150px,10%);
+  margin-top: max(60px,5%);
 }
 .twent{
   font-size: clamp(14px,5vw,26px);
@@ -283,6 +287,73 @@ ham i{
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
 }
+
+/* Profile Pic */
+.home-img{
+  margin-right: -5rem;
+  margin-left: 15rem;
+}
+
+.circle {
+  /* margin-left: 40rem; */
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.outer-circle {
+  width: 365px;
+  height: 365px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 4px rgb(77, 77, 77, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.inner-circle {
+  width: 350px;
+  height: 350px;
+  border: 3px solid rgb(48, 33, 33);
+  box-shadow: 0px 0px 3px 2px rgb(48, 33, 33) inset;
+  z-index: 1;
+  overflow: hidden;
+}
+.inner-circle img {
+  width: 410px;
+  background-size: cover;
+}
+.sq {
+  position: absolute;
+  width: 50%;
+  height: 120%;
+  max-height: 0;
+  background: var(--light-red);
+}
+.outer-circle:hover .sq {
+  max-height: 130%;
+}
+
+/* Circle-1 Animation Settings */
+.circle-1 .sq-1 {
+  top: -5%;
+  right: 0;
+  transition: max-height 0.4s linear 0.3s;
+}
+.circle-1:hover .sq-1 {
+  transition: max-height 0.4s linear 0s;
+}
+.circle-1 .sq-2 {
+  bottom: -5%;
+  left: 0;
+  transition: max-height 0.4s linear 0s;
+}
+.circle-1:hover .sq-2 {
+  transition: max-height 0.4s ease-out 0.3s;
+}
+/* End of Circle-1 Animation Settings */
+
+
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
@@ -315,6 +386,15 @@ ham i{
   text-shadow: 2px 2px  var(--light-red);
   /* font-family: 'Yellowtail', cursive; */
 }
+
+
+
+/* .home-img:hover{
+  width: 100%;
+  filter: grayscale(10%);
+} */
+
+
 .rubber:hover{
   display: inline-block;
   animation: rubberLater .6s ease-in-out forwards;
@@ -364,13 +444,40 @@ ham i{
   background: rgb(255, 107, 107,.1);
 }
 @media screen and (min-width:700px){
+
   .info{
     font-size: 20px;
   }
   .give-padding{
-    padding: 20px 100px;
+    padding: 20px 150px;
   }
+
+  
+
 }
+
+@media screen and (max-width:700px){
+
+  .hero{
+    flex-direction: column;
+  }
+
+  .home-img{
+    margin-top: 7rem;
+    margin-left: -5rem;
+  }
+
+  #about{
+    margin-top: 13rem;
+  }
+
+  #github-stat{
+    flex-direction: column;
+  }
+
+
+}
+
 /* Hero */
 
 /* About Section */
@@ -407,7 +514,7 @@ ham i{
 }
 .skills-list{
   display: grid;
-grid-template-columns: repeat(2, minmax(140px, 200px));
+grid-template-columns: repeat(3, minmax(140px, 200px));
 gap: 20px 30px;
 padding: 0px;
 margin: 20px 0px 0px;
@@ -478,7 +585,7 @@ list-style: none;
 /* work */
 
 /* Projects */
-.project{
+.project-card{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin-top: 50px;
@@ -496,11 +603,13 @@ list-style: none;
   filter: grayscale(100%)  blur(1px);
   transition: filter .2s;
 }
-.project:nth-child(2n+0) .project-img{
+.project-card:nth-child(2n+0) .project-img{
   grid-area: 1 / 1 / -1 / 8;
 }
 .project-img img:hover{
   filter: grayscale(0);
+  /* object-fit:scale-down; */
+  width: 100%;
 }
 .project-info{
   grid-area: 1 / 1 / -1 / 8;
@@ -523,7 +632,7 @@ list-style: none;
   margin-top: 10px;
   opacity: .9;
 }
-.project-card{
+.project-description{
   background: var(--brown-red);
   position: relative;
   padding: 10px;
@@ -545,7 +654,7 @@ ul.tech-used{
 }
 ul.tech-used li{
   margin: 10px 10px;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 5px;
   /* background-color: var(--light-red); */
   /* opacity: .8; */
@@ -559,7 +668,7 @@ ul.tech-used li{
   scale: 1.2;
 }
 @media screen and (min-width:800px){
-  .project{
+  .project-card{
       grid-template-columns: repeat(12, 1fr);
   }
   .project-img img{
@@ -571,16 +680,16 @@ ul.tech-used li{
     border: none;
     text-align: left;
   }
-  .project-card{
+  .project-description{
     padding: 25px;
   }
-  .project:nth-child(2n+0) .project-info{
+  .project-card:nth-child(2n+0) .project-info{
     text-align: right;
   }
-  .project:nth-child(2n+0) .project-info{
+  .project-card:nth-child(2n+0) .project-info{
     grid-area: 1 / 6 / -1 / -1;
   }
-  .project-card{
+  .project-description{
     border: 1px solid var(--light-red);
   }
 }
@@ -627,7 +736,7 @@ ul.tech-used li{
   margin-bottom: 0;
   scale: 1;
 }
-#footer-email{
+#contact-email{
   display: none;
   position: fixed;
 }
@@ -647,14 +756,14 @@ ul.tech-used li{
     margin-bottom: 20px;
     scale: 1.2;
   }
-  #footer-email{
+ #contact-email{
     display: block;
     position: fixed;
     bottom: 180px;
     right: -70px;
     transform: rotate(90deg);
   }
-  #footer-email:hover{
+  #contact-email:hover{
     margin-bottom: 20px;
   }
 }

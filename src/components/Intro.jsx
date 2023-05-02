@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img from "../images/logo/image.png";
+import img1 from "../images/pictures/personal.png";
 import Rubber from "./Rubber";
 import Typewriter from "typewriter-effect";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +9,8 @@ import Typewriter from "typewriter-effect";
 export default function Intro({ handleClick, boolean }) {
   return (
     <div
-      id="hero"
+      // id="hero"
+      id="home"
       className="hero"
       onClick={() => {
         if (boolean === false) handleClick();
@@ -17,11 +19,20 @@ export default function Intro({ handleClick, boolean }) {
       <div id="hero-img">
         <img src={img} alt="" />
       </div>
+      <div className="home-img">
+      <div class="outer-circle circle circle-1 home-img">
+        <span class="sq sq-1"></span>
+        <span class="inner-circle circle">
+          <img src={img1} />
+        </span>
+        <span class="sq sq-2"></span>
+      </div>
+      </div>
       <div className="intro give-padding contain">
         <div className="txt-light-red twent">
           Namaste<span className="wave">🙏</span>, my name is
         </div>
-        <div className="bio name lighter-red">
+        <div id="user-detail-name" className="bio name lighter-red">
           <Rubber text={"Vishal Durge."} />{" "}
         </div>
         <div className="bio what-i-do">
@@ -42,12 +53,10 @@ export default function Intro({ handleClick, boolean }) {
           />
         </div>
 
-        <div className="info">
-        Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in collaborating with teams to plan the technical
-writing and execution of functional specifications for
-websites and applications
-          
-
+        <div id="user-detail-intro" className="info">
+          Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in
+          collaborating with teams to plan the technical writing and execution
+          of functional specifications for websites and applications
         </div>
         <div className="button-container">
           <a className="contact-button" href="#contact">
@@ -55,6 +64,7 @@ websites and applications
           </a>
         </div>
       </div>
+      
     </div>
   );
 }
