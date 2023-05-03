@@ -28,7 +28,7 @@ export default function getProjects() {
         image:'Myntra-clone.png',
         projectInfo: "It's a clone of Myntra Fashion app created using HTML , CSS , vanila js , bootstrap",
         techUsed: ["vanilaJs", "HTML", "CSS"],
-        projectLinkHosted: "https://verdant-banoffee-a24fd6.netlify.app/",
+        projectLinkHosted: "https://myntra-clone-v.netlify.app/",
         projectLinkGithub: "https://github.com/Vishalll069/Myntra-Clone",
       },
       {
@@ -41,15 +41,15 @@ export default function getProjects() {
         projectLinkHosted: "https://movie-station-m.netlify.app/",
         projectLinkGithub: "https://movie-station-m.netlify.app/",
       },
-    //   {
-    //     id: 4,
-    //     projectTitle: "Blogpot",
-    //     image:"blogpot.png",
-    //     projectInfo:
-    //       "A simple blog app made in django i created it when i was still learning html and css.",
-    //     techUsed: ["HTML", "CSS", "Django"],
-    //     projectLinkHosted: "https://nsn-blog.herokuapp.com/",
-    //     projectLinkGithub: "https://github.com/nischalll/blog",
-    //   },
+      {
+        id: 5,
+        projectTitle: "Faballey-Clone",
+        image:"fabally.png",
+        projectInfo:
+          "Clone of E-commerce Fashion hub website Called Faballey.Com created with Vanila Javascript and HTML CSS",
+        techUsed: ["HTML", "CSS", "JavaScript", "Bootstarp"],
+        projectLinkHosted: "https://faballey-web.netlify.app/",
+        projectLinkGithub: "https://github.com/BabyGupta05/faballey",
+      },
     ];
   }

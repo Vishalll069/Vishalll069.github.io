@@ -29,7 +29,7 @@ export default function About() {
           <br />
           
         </div>
-        <a target="_blank" rel="noreferrer" href={resume} download={resume} id="resume-link-2" className="contact-button resume-button second-btn">Resume</a>
+        <a target="_blank" rel="noreferrer" href={resume} download={resume} id="resume-button-2" className="contact-button resume-button second-btn">Resume</a>
       </div>
     </section>
   );

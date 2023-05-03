@@ -289,7 +289,7 @@ ham i{
 }
 
 /* Profile Pic */
-.home-img{
+.home-img-cont{
   margin-right: -5rem;
   margin-left: 15rem;
 }
@@ -389,7 +389,7 @@ ham i{
 
 
 
-/* .home-img:hover{
+/* .home-img-cont:hover{
   width: 100%;
   filter: grayscale(10%);
 } */
@@ -462,8 +462,8 @@ ham i{
     flex-direction: column;
   }
 
-  .home-img{
-    margin-top: 7rem;
+  .home-img-cont{
+    margin-top: 15rem;
     margin-left: -5rem;
   }
 

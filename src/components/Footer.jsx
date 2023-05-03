@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {fab, faTwitterSquare, faInstagram, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faTwitterSquare, faInstagram, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
@@ -11,22 +11,22 @@ export default function Footer() {
         <div className="socials">
           <ul id="social-icons">
             <li id="contact-github">
-              <a target="_blank" href="https://github.com/Vishalll069">
+              <a target="_blank" rel="noreferrer" href="https://github.com/Vishalll069">
               <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li id="contact-linkedin">
-              <a target="_blank" href="https://www.linkedin.com/in/vishal-durge-745275210/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/vishal-durge-745275210/">
               <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/fullstuckVishal">
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/fullstuckVishal">
               <FontAwesomeIcon icon={faTwitterSquare} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.instagram.com/vishalll069/">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/vishalll069/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import img from "../images/logo/image.png";
 import img1 from "../images/pictures/personal.png";
 import Rubber from "./Rubber";
@@ -17,16 +17,16 @@ export default function Intro({ handleClick, boolean }) {
       }}
     >
       <div id="hero-img">
-        <img src={img} alt="" />
+        <img src={img} alt="back" />
       </div>
-      <div className="home-img">
-      <div class="outer-circle circle circle-1 home-img">
-        <span class="sq sq-1"></span>
-        <span class="inner-circle circle">
-          <img src={img1} />
-        </span>
-        <span class="sq sq-2"></span>
-      </div>
+      <div className="home-img-cont">
+        <div class="outer-circle circle circle-1 home-img">
+          <span class="sq sq-1"></span>
+          <span class="inner-circle circle">
+            <img className="home-img" src={img1} alt="personal" />
+          </span>
+          <span class="sq sq-2"></span>
+        </div>
       </div>
       <div className="intro give-padding contain">
         <div className="txt-light-red twent">
@@ -52,11 +52,12 @@ export default function Intro({ handleClick, boolean }) {
             }}
           />
         </div>
-
-        <div id="user-detail-intro" className="info">
-          Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in
-          collaborating with teams to plan the technical writing and execution
-          of functional specifications for websites and applications
+        <div id="user-detail-intro">
+          <div className="info">
+            Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in
+            collaborating with teams to plan the technical writing and execution
+            of functional specifications for websites and applications
+          </div>
         </div>
         <div className="button-container">
           <a className="contact-button" href="#contact">
@@ -64,7 +65,6 @@ export default function Intro({ handleClick, boolean }) {
           </a>
         </div>
       </div>
-      
     </div>
   );
 }

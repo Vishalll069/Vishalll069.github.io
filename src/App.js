@@ -34,22 +34,25 @@ function App() {
       setCursor(true);
     }
   }
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
     Aos.refresh();
-  },[])
+  }, []);
 
   return (
-    <div onMouseOver={handleMouseOver} onMouseMove={handleMouseMove} className="App">
-
-<div
+    <div
+      onMouseOver={handleMouseOver}
+      onMouseMove={handleMouseMove}
+      className="App"
+    >
+      <div
         style={{ left: mousePosition.left, top: mousePosition.top }}
         className="cursor"
       >
         {(cursor && "Go To") || "hello!"}
       </div>
 
-      <Navbar  handleClick={handleClick} boolean={boolean}/>
+      <Navbar handleClick={handleClick} boolean={boolean} />
       <Intro handleClick={handleClick} boolean={boolean} />
       <div
         onClick={() => {
@@ -58,13 +61,13 @@ function App() {
         className="contain give-padding"
       >
         <About />
-        <Skills/>
-        <Work/>
-        <Projects/>
-        <Github/>
-        <Contact/>
+        <Skills />
+        <Work />
+        <Projects />
+        <Github />
+        <Contact />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Work() {
         {companies.map((company, index) => (
           <div data-aos="fade-up" key={company.id} className="company">
             <div className=" company-name ">
-              <a target="_blank" href={company.companyLink} className="sauce">{company.companyName}</a>
+              <a target="_blank" rel="noreferrer" href={company.companyLink} className="sauce">{company.companyName}</a>
             </div>
             <div className="company-desc expand">
               <span className="txt-highlights">{company.position}</span>

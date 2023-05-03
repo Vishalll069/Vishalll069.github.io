@@ -46,7 +46,7 @@ export default function Navbar({ handleClick, boolean }) {
           </a>
         </li>
       </ul>
-      <a target="_blank" rel="noreferrer" href={resume} download={resume} id="resume-link-1" className="contact-button nav-link resume resume-button second-btn">Resume</a>
+      <a target="_blank" rel="noreferrer" href={resume} download={resume} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">Resume</a>
     </nav>
   );
 }

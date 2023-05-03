@@ -5,13 +5,13 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import getProjects from "../data/projects";
 import AOS from "aos";
 
-const projectsPerPage = 3;
+const projectsPerPage = 4;
 let arrayForHoldingProjects = [];
 
 export default function Projects() {
   const [projects, setProjects] = useState(getProjects());
   const [projectsToShow, setProjectsToShow] = useState([]);
-  const [next, setNext] = useState(3);
+  const [next, setNext] = useState(4);
 
   function loopWithSlice(start, end) {
     const slicedProjects = projects.slice(start, end);
@@ -49,7 +49,7 @@ export default function Projects() {
                 {/* <img src={require(`${project.image}`).default()} alt="" /> */}
               </div>
               <div className="project-info">
-                <a target="_blank" href={project.projectLinkHosted}>
+                <a target="_blank" rel="noreferrer" href={project.projectLinkHosted}>
                   <div className="project-title">{project.projectTitle}</div>
                 </a>
                 <div className="project-description">{project.projectInfo}</div>
@@ -59,10 +59,10 @@ export default function Projects() {
                   ))}
                 </ul>
                 <div className="project-links">
-                  <a className="project-github-link" target="_blank" href={project.projectLinkGithub}>
+                  <a className="project-github-link" rel="noreferrer" target="_blank" href={project.projectLinkGithub}>
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
-                  <a className="project-deployed-link" target="_blank" href={project.projectLinkHosted}>
+                  <a className="project-deployed-link" rel="noreferrer" target="_blank" href={project.projectLinkHosted}>
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </a>
                 </div>
