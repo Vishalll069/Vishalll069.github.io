@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.63ba9fcc.css",
-    "main.js": "/static/js/main.d88c2a4c.js",
+    "main.css": "/static/css/main.017d6e0c.css",
+    "main.js": "/static/js/main.154ec772.js",
     "static/media/hotstar.png": "/static/media/hotstar.ed84f6a00d968ee33bd6.png",
     "static/media/Myntra-clone.png": "/static/media/Myntra-clone.ece51c0d11dfc3e67791.png",
+    "static/media/fabally.png": "/static/media/fabally.b4076021a6d33bfb03b6.png",
     "static/media/movieStation.png": "/static/media/movieStation.aade67b217999dd613f8.png",
     "static/media/Repogit.png": "/static/media/Repogit.77a2744726c1261c2083.png",
     "static/media/personal.png": "/static/media/personal.e3eb87c14df4c7ac8297.png",
     "static/media/Vishal_Durge_Resume.pdf": "/static/media/Vishal_Durge_Resume.0347767daade8ee296bc.pdf",
     "static/media/image.png": "/static/media/image.63124443f7305a5ab6bd.png",
     "index.html": "/index.html",
-    "main.63ba9fcc.css.map": "/static/css/main.63ba9fcc.css.map",
-    "main.d88c2a4c.js.map": "/static/js/main.d88c2a4c.js.map"
+    "main.017d6e0c.css.map": "/static/css/main.017d6e0c.css.map",
+    "main.154ec772.js.map": "/static/js/main.154ec772.js.map"
   },
   "entrypoints": [
-    "static/css/main.63ba9fcc.css",
-    "static/js/main.d88c2a4c.js"
+    "static/css/main.017d6e0c.css",
+    "static/js/main.154ec772.js"
   ]
 }
