@@ -26,7 +26,7 @@ export default function Navbar({ handleClick, boolean }) {
           </a>
         </li>
         <li className="nav-link skills">
-          <a href="#about" className="underline">
+          <a href="#skills" className="underline">
             <span className="sauce">1. </span>Skills
           </a>
         </li>

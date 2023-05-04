@@ -20,7 +20,7 @@ export default function Intro({ handleClick, boolean }) {
         <img src={img} alt="back" />
       </div>
       <div className="home-img-cont">
-        <div class="outer-circle circle circle-1 home-img">
+        <div class="outer-circle circle circle-1">
           <span class="sq sq-1"></span>
           <span class="inner-circle circle">
             <img className="home-img" src={img1} alt="personal" />
