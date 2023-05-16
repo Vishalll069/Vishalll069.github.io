@@ -52,7 +52,7 @@ export default function Intro({ handleClick, boolean }) {
             }}
           />
         </div>
-        <div id="user-detail-intro">
+        <div >
           <div className="info">
             Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in
             collaborating with teams to plan the technical writing and execution
