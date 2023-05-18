@@ -55,7 +55,7 @@ export default function Intro({ handleClick, boolean }) {
         <div>
           <div className="info">
             Highly passionate and user-focused Developer👨‍💻 from INDIA🇮🇳 adept in
-            collaborating with teams to plan the technical writing and execution of functional specifications for websites and applications, proficient in HTML5, CSS3, JavaScript, ReactJs, NodeJs, and Express, with a strong grasp of database technologies such as MongoDB.
+            collaborating with teams to plan the technical writing and execution of functional specifications for websites and applications.
           </div>
         </div>
         <div className="button-container">

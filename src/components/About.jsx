@@ -18,8 +18,8 @@ export default function About() {
         <div data-aos="fade-up" className=" first">
           <p id="user-detail-intro">
             Welcome to where I turn coffee into code! I'm Vishal,
-            a full stack web developer with a passion for building websites that
-            not only look great but also make users say, <p style={{display:'inline-block'}} className="sauce">'Wow, this is awesome!' </p> &nbsp; 
+            a full stack web developer proficient in HTML5, CSS3, JavaScript, ReactJs, NodeJs, and Express, with a strong grasp of database technologies such as MongoDB.
+ with a passion for building websites that not only look great but also make users say, <p style={{display:'inline-block'}} className="sauce">'Wow, this is awesome!' </p> &nbsp; 
              I may not have superpowers, but I have a keen eye for detail and a
             commitment to excellence that drives me to tackle even the most
             complex coding challenges. When I'm not coding, you can find me
