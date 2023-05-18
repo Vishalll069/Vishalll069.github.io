@@ -5,13 +5,13 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import getProjects from "../data/projects";
 import AOS from "aos";
 
-const projectsPerPage = 4;
+const projectsPerPage = 3;
 let arrayForHoldingProjects = [];
 
 export default function Projects() {
   const [projects, setProjects] = useState(getProjects());
   const [projectsToShow, setProjectsToShow] = useState([]);
-  const [next, setNext] = useState(4);
+  const [next, setNext] = useState(3);
 
   function loopWithSlice(start, end) {
     const slicedProjects = projects.slice(start, end);
