@@ -16,7 +16,7 @@ export default function About() {
       </h1>
       <div>
         <div data-aos="fade-up" className=" first">
-          <p>
+          <p id="user-detail-intro">
             Welcome to where I turn coffee into code! I'm Vishal,
             a full stack web developer with a passion for building websites that
             not only look great but also make users say, <p style={{display:'inline-block'}} className="sauce">'Wow, this is awesome!' </p> &nbsp; 
