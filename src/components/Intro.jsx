@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../images/logo/image.png";
 import img1 from "../images/pictures/personal.png";
+import one from '../images/pictures/onepiece.jpg'
 import Rubber from "./Rubber";
 import Typewriter from "typewriter-effect";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,6 +28,7 @@ export default function Intro({ handleClick, boolean }) {
           </span>
           <span class="sq sq-2"></span>
         </div>
+        {/* <img width={'100%'} className="home-img" src={one} alt="personal" /> */}
       </div>
       <div className="intro give-padding contain">
         <div className="txt-light-red twent">
