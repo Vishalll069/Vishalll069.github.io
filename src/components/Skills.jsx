@@ -1,7 +1,8 @@
 import React,{useEffect} from "react";
 import {DiMongodb, DiHtml5} from 'react-icons/di'
-import {SiExpress,SiCss3, SiRedux, SiTailwindcss,SiJavascript,SiReact} from 'react-icons/si'
+import {SiExpress,SiCss3, SiRedux, SiTailwindcss,SiJavascript,SiReact,SiPostman,SiVite} from 'react-icons/si'
 import {FaNodeJs, FaGitSquare, FaJava} from 'react-icons/fa'
+import {TbBrandVscode} from 'react-icons/tb'
 import AOS from "aos";
 
 export const Skills = () => {
@@ -17,7 +18,7 @@ export const Skills = () => {
         <span className="sauce">1. </span>Skills
       </h1>
       <div></div>
-        <p data-aos="fade-up">Here are a few technologies I’ve been working with recently:</p>
+        <p data-aos="fade-up">Here are a few Technologies I’ve been working with recently:</p>
           <ul data-aos="fade-up"  className="skills-list">
             <li className="skills-card">
               <div className="skills-card-name" > <SiJavascript className="skills-card-img" color="#ff6b6b" /> JavaScript</div>
@@ -47,10 +48,22 @@ export const Skills = () => {
               <div className="skills-card-name" ><SiTailwindcss className="skills-card-img" color="#ff6b6b"/> Tailwind</div>
             </li>
             <li className="skills-card">
+              <div className="skills-card-name" ><FaJava className="skills-card-img" fontSize={'27px'} color="#ff6b6b"/> Java</div>
+            </li>
+          </ul>
+        <p data-aos="fade-up" style={{marginTop:'3rem'}}>Here are a few Tools I’ve been working with recently:</p>
+          <ul data-aos="fade-up"  className="skills-list">
+            <li className="skills-card">
               <div className="skills-card-name" > <FaGitSquare className="skills-card-img" color="#ff6b6b"/> Git</div>
             </li>
             <li className="skills-card">
-              <div className="skills-card-name" ><FaJava className="skills-card-img" fontSize={'27px'} color="#ff6b6b"/> Java</div>
+              <div className="skills-card-name" ><TbBrandVscode className="skills-card-img" fontSize={'25px'} color="#ff6b6b"/> VScode</div>
+            </li>
+            <li className="skills-card">
+              <div className="skills-card-name" ><SiPostman className="skills-card-img" color="#ff6b6b"/> Postman</div>
+            </li>
+            <li className="skills-card">
+              <div className="skills-card-name" ><SiVite className="skills-card-img" fontSize={'25px'} color="#ff6b6b"/> Vite</div>
             </li>
           </ul>
     </section>
