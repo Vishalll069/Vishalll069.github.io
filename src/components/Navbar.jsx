@@ -16,7 +16,7 @@ export default function Navbar({ handleClick, boolean }) {
           </a>
         </h1>
         <div className="ham-container">
-          <a target="_blank" rel="noreferrer" href={resume} download={'Vishal-Durge-Resume'} className="contact-button resume-button first-btn">
+          <a rel="noreferrer" href={resume} onClick={handleDownload} download={'Vishal-Durge-Resume'} className="contact-button resume-button first-btn">
             Resume
           </a>
           <span className="ham">

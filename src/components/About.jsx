@@ -4,6 +4,10 @@ import AOS from "aos";
 
 export default function About() {
 
+  const handleDownload = () => {
+    window.open(resume, '_blank');
+  };
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -29,7 +33,7 @@ export default function About() {
           <br />
           
         </div>
-        <a target="_blank" rel="noreferrer" href={resume} download={"Vishal-Durge-Resume"} id="resume-button-2" className="contact-button resume-button second-btn">Resume</a>
+        <a onClick={handleDownload} rel="noreferrer" href={resume} download={"Vishal-Durge-Resume"} id="resume-button-2" className="contact-button resume-button second-btn">Resume</a>
       </div>
     </section>
   );
