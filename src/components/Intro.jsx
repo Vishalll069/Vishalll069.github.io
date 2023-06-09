@@ -50,6 +50,9 @@ export default function Intro({ handleClick, boolean }) {
                 .typeString("I Do Backend.")
                 .pause(2000)
                 .deleteAll()
+                .typeString("I Watch Animes.")
+                .pause(2000)
+                .deleteAll()
                 .start();
             }}
           />
