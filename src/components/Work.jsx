@@ -22,7 +22,10 @@ export default function Work() {
               <a target="_blank" rel="noreferrer" href={company.companyLink} className="sauce">{company.companyName}</a>
             </div>
             <div className="company-desc expand">
-              <span className="txt-highlights">{company.position}</span>
+              <span className="txt-highlights">{company.position}{" "}</span>
+              <div>
+              <span>{company?.time}{"  "}</span>
+              </div>
               <ul>
                 {company.points.map((point,index) => (
                   <li key={index}>{point}</li>

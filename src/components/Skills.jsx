@@ -27,6 +27,9 @@ export const Skills = () => {
               <div className="skills-card-name" > <SiReact className="skills-card-img" color="#ff6b6b"/>  ReactJs</div>
             </li>
             <li className="skills-card">
+              <div className="skills-card-name" > <SiReact className="skills-card-img" color="#ff6b6b"/>  React Native</div>
+            </li>
+            <li className="skills-card">
               <div className="skills-card-name" ><SiRedux className="skills-card-img" color="#ff6b6b"/> Redux</div>
             </li>
             <li className="skills-card">
