@@ -12,7 +12,7 @@ export default function getWork() {
           "Created beautiful and intuitive interfaces with XML and Google's latest and Material Design guidelines.",
           
         ],
-        time:'Current'
+        time:'08/23 - Current'
       },
       {
         id: 2,
