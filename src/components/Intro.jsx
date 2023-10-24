@@ -1,7 +1,6 @@
 import React from "react";
-import img from "../images/logo/image.png";
+import img from "../images/logo/image1.png";
 import img1 from "../images/pictures/personal.png";
-import one from '../images/pictures/onepiece.jpg'
 import Rubber from "./Rubber";
 import Typewriter from "typewriter-effect";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

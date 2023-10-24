@@ -256,8 +256,8 @@ ham i{
   
 }
 #hero-img img{
-  width: 20rem;
-  opacity: .02;
+  width: 100%;
+  opacity: .07;
 }
 .contain{
   max-width: 1000px;
