@@ -7,9 +7,9 @@ export default function getWork() {
         position: "Software Developer",
         points: [
           "Working on Employee And HR management Mobile App",
-          "Tested UI for different devices.",
-          "Applied best design practices.",
-          "Created beautiful and intuitive interfaces with XML and Google's latest and Material Design guidelines.",
+          "Testing UI for different devices.",
+          "Applying best design practices.",
+          "Creating beautiful and intuitive interfaces Google's latest and Material Design guidelines.",
           
         ],
         time:'08/23 - Current'
