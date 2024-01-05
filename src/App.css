@@ -162,7 +162,7 @@ a:hover{
   text-align: center;
   transition: all .5s;
 }
-ham i{
+.ham i{
   font-size: 25px;
 }
 #nav-menu ul{
@@ -253,11 +253,13 @@ ham i{
   justify-content: center;
   align-items: center;
   z-index: -10;
+  /* object-fit: scale-down; */
   
 }
 #hero-img img{
-  width: 100%;
+  /* width: 100%; */
   opacity: .07;
+  object-fit: contain;
 }
 .contain{
   max-width: 1000px;
@@ -462,6 +464,10 @@ ham i{
   .home-img-cont{
     margin-top: 15rem;
     margin-left: -5rem;
+  }
+
+  #hero-img{
+    object-fit: fill;
   }
 
   #about{
@@ -756,6 +762,9 @@ ul.tech-used li{
  #social-icons{
    margin: 30px;
  } 
+ #hero-img{
+  object-fit: fill;
+}
 }
 @media screen and (min-width:800px) {
   #social-icons{
