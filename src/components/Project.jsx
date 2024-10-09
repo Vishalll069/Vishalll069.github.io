@@ -44,7 +44,8 @@ export default function Projects() {
               <div className="project-img">
                 <img
                   src={require(`../images/projects/${project.image}`)}
-                  alt=""
+                  alt={project.title}
+                  onError={(e) => { e.target.onerror = null; e.target.src = '../images/projects/fallback.png'; }} // Fallback for missing images
                 />
                 {/* <img src={require(`${project.image}`).default()} alt="" /> */}
               </div>
@@ -53,7 +54,7 @@ export default function Projects() {
                   <div className="project-title">{project.projectTitle}</div>
                 </a>
                 <div className="project-description">{project.projectInfo}</div>
-                <ul className="tech-used project-tech-stack">
+                <ul className="tech-used project-tech-stack scroll">
                   {project.techUsed.map((tech, index) => (
                     <li  key={index}>{tech}</li>
                   ))}

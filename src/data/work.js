@@ -6,7 +6,8 @@ export default function getWork() {
         companyLink: "https://www.clayfin.com/",
         position: "Software Developer",
         points: [
-          "Working on Employee And HR operations management Mobile App",
+          "Working on scaling and optimizing banking web and mobile apps",
+          "Worked on Employee And HR operations management Mobile App",
           "Testing UI for different devices.",
           "Applying best design practices.",
           "Creating beautiful and intuitive interfaces Google's latest and Material Design guidelines.",          

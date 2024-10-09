@@ -612,6 +612,9 @@ list-style: none;
 }
 .project-img{
   grid-area: 1 / 6 / -1 / -1;
+  overflow: hidden; /* Hide overflow for scaling effect */
+  position: relative; /* Ensure the image can be positioned inside */
+
 }
 .project-img img{
   width: 100%;
@@ -619,7 +622,8 @@ list-style: none;
   /* height: 400px; */
   object-fit: cover;
   filter: grayscale(100%)  blur(1px);
-  transition: filter .2s;
+  /* transition: filter .2s; */
+  transition: filter 0.2s, transform 0.5s; 
 }
 .project-card:nth-child(2n+0) .project-img{
   grid-area: 1 / 1 / -1 / 8;
@@ -627,6 +631,7 @@ list-style: none;
 .project-img img:hover{
   filter: grayscale(0);
   /* object-fit:scale-down; */
+  transform: scale(0.95);
   width: 100%;
 }
 .project-info{
@@ -664,19 +669,26 @@ list-style: none;
 ul.tech-used{
   color: var(--lighter-red);
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
+  overflow: auto; /* Optional: allows scrolling if needed */
 }
+
 ul.tech-used li{
   margin: 10px 10px;
-  /* padding: 5px; */
+  padding: 5px;
   border-radius: 5px;
-  /* background-color: var(--light-red); */
-  /* opacity: .8; */
-  /* color: rgb(77, 24, 36); */
+  display: flex; /* Enable flexbox */
+  transition: transform 0.5s; 
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  /* display:inline; */
+}
+
+ul.tech-used li:hover {
+  transform: scale(1.05);
 }
 .project-links a{
   font-size: 30px;
@@ -790,3 +802,27 @@ ul.tech-used li{
 }
 
 /* footer */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+  visibility: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  visibility: visible;
+  background: #555; 
+}
